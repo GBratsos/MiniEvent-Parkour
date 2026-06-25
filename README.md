@@ -1,2 +1,2 @@
-# MiniEvent-Parkour
-MiniEvent-Parkour
+# MiniEvent
+MiniEvent
