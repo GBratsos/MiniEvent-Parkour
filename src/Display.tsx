@@ -190,11 +190,11 @@ export default function Display({ participants: propParticipants }: DisplayProps
         )}
       </main>
 
-      <footer className="display-footer no-print">
+      {/* <footer className="display-footer no-print">
         <Link to="/backend" className="backend-link">
           Admin backend
         </Link>
-      </footer>
+      </footer> */}
     </div>
   );
 }
