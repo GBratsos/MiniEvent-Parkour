@@ -6,10 +6,10 @@
   background: #0a0a0a;
   color: #f0f0f0;
 
-  --yellow: #004225;
-  --yellow-dim: rgba(0, 66, 37, 0.12);
-  --yellow-glow: rgba(0, 66, 37, 0.25);
-  --yellow-border: rgba(0, 66, 37, 0.4);
+  --yellow: #00873a;
+  --yellow-dim: rgba(0, 135, 58, 0.12);
+  --yellow-glow: rgba(0, 135, 58, 0.25);
+  --yellow-border: rgba(0, 135, 58, 0.4);
   --black: #0a0a0a;
   --card: #141414;
   --card-alt: #1c1c1c;
@@ -32,7 +32,7 @@ body,
 
 body {
   margin: 0;
-  background: radial-gradient(ellipse at top center, rgba(0, 66, 37, 0.05) 0%, transparent 50%),
+  background: radial-gradient(ellipse at top center, rgba(0, 135, 58, 0.05) 0%, transparent 50%),
     linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
 }
 
@@ -193,9 +193,9 @@ button {
 }
 
 button:hover {
-  background: #005a32;
+  background: #00a347;
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(0, 66, 37, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 135, 58, 0.3);
 }
 
 button.secondary {
@@ -336,7 +336,7 @@ tr:nth-child(even) {
 }
 
 .editable-cell:hover {
-  background: rgba(0, 66, 37, 0.05);
+  background: rgba(0, 135, 58, 0.05);
 }
 
 .editable-cell.editing {
@@ -562,7 +562,7 @@ tr:nth-child(even) {
 .leader-icon .fa-trophy {
   font-size: 5rem;
   color: var(--yellow);
-  filter: drop-shadow(0 4px 20px rgba(0, 66, 37, 0.4));
+  filter: drop-shadow(0 4px 20px rgba(0, 135, 58, 0.4));
 }
 
 .standings-card h3 {
@@ -718,7 +718,7 @@ tr:nth-child(even) {
 }
 
 .display-table tbody tr:hover {
-  background: rgba(0, 66, 37, 0.03);
+  background: rgba(0, 135, 58, 0.03);
 }
 
 .display-empty {
