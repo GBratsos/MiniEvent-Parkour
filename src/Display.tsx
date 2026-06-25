@@ -54,8 +54,8 @@ export default function Display({ participants: propParticipants }: DisplayProps
           <img src={miniCooper} alt="Mini Cooper" className="mini-logo" />
           <div>
             <p className="brand-label">MINI John Cooper Works</p>
-            <h1>Simracing Experience</h1>
-            <p className="brand-subtitle">Assetto Corsa Evo · Classic Mini Cooper</p>
+            <h1>Parkour Experience</h1>
+            {/* <p className="brand-subtitle">Assetto Corsa Evo · Classic Mini Cooper</p> */}
           </div>
         </div>
         <div className="display-summary">
