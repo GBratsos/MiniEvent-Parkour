@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Backend from './Backend';
 import Display from './Display';
 import type { Participant } from './types';
@@ -97,7 +97,7 @@ export default function App() {
   };
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Display participants={sortedParticipants} />} />
         <Route
@@ -115,6 +115,6 @@ export default function App() {
         />
         <Route path="*" element={<Navigate replace to="/" />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
