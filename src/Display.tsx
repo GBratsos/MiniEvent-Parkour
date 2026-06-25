@@ -60,7 +60,7 @@ export default function Display({ participants: propParticipants }: DisplayProps
         </div>
         <div className="display-summary">
           <div className="metric-card">
-            <span>4 laps</span>
+            <span>3 laps</span>
             <small>Time Trial</small>
           </div>
           <div className="metric-card">
