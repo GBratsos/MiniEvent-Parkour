@@ -104,7 +104,7 @@ export default function App() {
           path="/backend"
           element={
             <Backend
-              participants={sortedParticipants}
+              participants={participants}
               addParticipant={addParticipant}
               updateParticipant={updateParticipant}
               deleteParticipant={deleteParticipant}

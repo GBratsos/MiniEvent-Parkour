@@ -288,6 +288,11 @@ button:disabled {
   overflow-x: auto;
 }
 
+.leaderboard-table .col-driver {
+  width: 200px;
+  min-width: 200px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -764,7 +769,11 @@ tr:nth-child(even) {
 }
 
 /* ─── Responsive ────────────────────────────────────────── */
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
+  .app-shell {
+    max-width: 100%;
+  }
+
   .display-header {
     grid-template-columns: 1fr;
   }

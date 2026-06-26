@@ -180,30 +180,28 @@ export default function Backend({
                 <i className="fa-solid fa-pen-to-square" /> Click any cell to edit it.
               </p>
               <div className="table-wrap">
-                <table>
+                <table className="leaderboard-table">
                   <thead>
                     <tr>
-                      <th>#</th>
-                      <th>Driver</th>
+                      <th className="col-rank">#</th>
+                      <th className="col-driver">Driver</th>
                       <th>Lap 1</th>
                       <th>Lap 2</th>
                       <th>Lap 3</th>
                       <th>Lap 4</th>
                       <th>Best</th>
-                      <th>Total</th>
-                      <th>Pts</th>
                       <th></th>
                     </tr>
                   </thead>
                   <tbody>
                     {participants.map((p, index) => (
                       <tr key={p.id}>
-                        <td>{index + 1}</td>
+                        <td className="col-rank">{index + 1}</td>
 
                         {(['name', 0, 1, 2, 3] as const).map((field) => (
                           <td
                             key={field}
-                            className={`editable-cell${isEditing(p.id, field) ? ' editing' : ''}`}
+                            className={`editable-cell${field === 'name' ? ' col-driver' : ''}${isEditing(p.id, field) ? ' editing' : ''}`}
                             onClick={() => !isEditing(p.id, field) && startEdit(p, field)}
                           >
                             {isEditing(p.id, field) ? (
@@ -234,8 +232,6 @@ export default function Backend({
                         ))}
 
                         <td>{displayMs(p.bestLapMs)}</td>
-                        <td>{displayMs(p.totalMs)}</td>
-                        <td><strong>{p.bestLapMs > 0 ? getPoints(index + 1) : '—'}</strong></td>
                         <td>
                           <button className="delete-button" onClick={() => deleteParticipant(p.id)}>
                             <i className="fa-solid fa-trash" />
